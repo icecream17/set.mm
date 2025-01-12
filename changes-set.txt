@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Jan-25 elunirn2  ---         obsolete - use elfvunirn instead
  9-Jan-25 nfrexdg   nfrexd      consistent with nfrald
  9-Jan-25 nfrexg    nfrex       consistent with nfral
  7-Jan-25 rhmdvdsr  [same]      Moved from TA's mathbox to main set.mm
@@ -137,7 +138,7 @@ Date      Old       New         Notes
 13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
 13-Dec-24 mptmpoopabovd [same]  revised - eliminated hypotheses
 13-Dec-24 mptmpoopabbrd [same]  revised - eliminated hypotheses
-13-Dec-24 wlkRes     ---        obsolete - use obapresex2 instead
+13-Dec-24 wlkRes     ---        obsolete - use opabresex2 instead
 13-Dec-24 opabresex2d ---       obsolete - use opabresex2 instead
 27-Nov-24 eldifsucnn [same]     moved from SF's mathbox to main set.mm
 27-Nov-24 nnasmo    [same]      moved from SF's mathbox to main set.mm
