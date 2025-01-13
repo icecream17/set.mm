@@ -88,6 +88,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+12-Jan-25 rimrhm    [same]      revised - eliminated unnecessary hypotheses
+12-Jan-25 isrim     [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 isrim0    [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 elrnust   ---         obsolete - use elfvunirn instead
 12-Jan-25 elunirn2  ---         obsolete - use elfvunirn instead
  9-Jan-25 nfrexdg   nfrexd      consistent with nfrald
  9-Jan-25 nfrexg    nfrex       consistent with nfral

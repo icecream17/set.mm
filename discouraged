@@ -9066,6 +9066,7 @@
 "ispsubclN" is used by "pmapsubclN".
 "ispsubclN" is used by "psubcli2N".
 "ispsubclN" is used by "psubcliN".
+"isrim0OLD" is used by "isrimOLD".
 "isrngo" is used by "isrngod".
 "isrngo" is used by "rngoi".
 "isrngod" is used by "iscringd".
@@ -16547,6 +16548,7 @@ New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
 New usage of "elringchomALTV" is discouraged (1 uses).
 New usage of "elrngchomALTV" is discouraged (1 uses).
+New usage of "elrnustOLD" is discouraged (0 uses).
 New usage of "elsetrecslem" is discouraged (1 uses).
 New usage of "elspancl" is discouraged (1 uses).
 New usage of "elspani" is discouraged (2 uses).
@@ -16558,7 +16560,7 @@ New usage of "elspansn5" is discouraged (2 uses).
 New usage of "elspansncl" is discouraged (1 uses).
 New usage of "elspansni" is discouraged (2 uses).
 New usage of "eltpsgOLD" is discouraged (0 uses).
-New usage of "elunirn2" is discouraged (0 uses).
+New usage of "elunirn2OLD" is discouraged (0 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
@@ -17450,6 +17452,8 @@ New usage of "ispointN" is discouraged (2 uses).
 New usage of "isposixOLD" is discouraged (0 uses).
 New usage of "ispsubcl2N" is discouraged (0 uses).
 New usage of "ispsubclN" is discouraged (10 uses).
+New usage of "isrim0OLD" is discouraged (1 uses).
+New usage of "isrimOLD" is discouraged (0 uses).
 New usage of "isrngo" is discouraged (2 uses).
 New usage of "isrngod" is discouraged (1 uses).
 New usage of "issgrpALT" is discouraged (1 uses).
@@ -18853,6 +18857,7 @@ New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
+New usage of "rimrhmOLD" is discouraged (0 uses).
 New usage of "ringcbasALTV" is discouraged (7 uses).
 New usage of "ringcbasbasALTV" is discouraged (3 uses).
 New usage of "ringccatALTV" is discouraged (5 uses).
@@ -20425,8 +20430,9 @@ Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elpwi2OLD" is discouraged (21 steps).
 Proof modification of "elrabiOLD" is discouraged (55 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
+Proof modification of "elrnustOLD" is discouraged (4 steps).
 Proof modification of "eltpsgOLD" is discouraged (73 steps).
-Proof modification of "elunirn2" is discouraged (65 steps).
+Proof modification of "elunirn2OLD" is discouraged (65 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en0ALT" is discouraged (62 steps).
 Proof modification of "en0OLD" is discouraged (86 steps).
@@ -20815,6 +20821,8 @@ Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isposixOLD" is discouraged (72 steps).
+Proof modification of "isrim0OLD" is discouraged (177 steps).
+Proof modification of "isrimOLD" is discouraged (64 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
@@ -21214,6 +21222,7 @@ Proof modification of "rexn0OLD" is discouraged (17 steps).
 Proof modification of "rexprgOLD" is discouraged (17 steps).
 Proof modification of "rexsngOLD" is discouraged (10 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rimrhmOLD" is discouraged (25 steps).
 Proof modification of "rlimaddOLD" is discouraged (159 steps).
 Proof modification of "rlimmulOLD" is discouraged (159 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
