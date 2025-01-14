@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Jan-25 elunnel2  [same]      moved from GS's mathbox to main set.mm
 12-Jan-25 rimrhm    [same]      revised - eliminated unnecessary hypotheses
 12-Jan-25 isrim     [same]      revised - eliminated unnecessary antecedent
 12-Jan-25 isrim0    [same]      revised - eliminated unnecessary antecedent
