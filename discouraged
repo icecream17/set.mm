@@ -17399,6 +17399,7 @@ New usage of "ipval3" is discouraged (1 uses).
 New usage of "ipz" is discouraged (1 uses).
 New usage of "isablo" is discouraged (3 uses).
 New usage of "isabloi" is discouraged (3 uses).
+New usage of "isanmbfmOLD" is discouraged (0 uses).
 New usage of "isarep1OLD" is discouraged (0 uses).
 New usage of "isass" is discouraged (1 uses).
 New usage of "isblo" is discouraged (5 uses).
@@ -17751,6 +17752,7 @@ New usage of "matvscaOLD" is discouraged (0 uses).
 New usage of "max1ALT" is discouraged (0 uses).
 New usage of "mayete3i" is discouraged (1 uses).
 New usage of "mayetes3i" is discouraged (0 uses).
+New usage of "mbfmbfmOLD" is discouraged (0 uses).
 New usage of "mdbr" is discouraged (6 uses).
 New usage of "mdbr2" is discouraged (7 uses).
 New usage of "mdbr3" is discouraged (0 uses).
@@ -20812,6 +20814,7 @@ Proof modification of "intprgOLD" is discouraged (80 steps).
 Proof modification of "iotaexOLD" is discouraged (57 steps).
 Proof modification of "iotassuniOLD" is discouraged (35 steps).
 Proof modification of "iotavalOLD" is discouraged (101 steps).
+Proof modification of "isanmbfmOLD" is discouraged (15 steps).
 Proof modification of "isarep1OLD" is discouraged (106 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
@@ -20860,6 +20863,7 @@ Proof modification of "mathbox" is discouraged (1 steps).
 Proof modification of "matscaOLD" is discouraged (73 steps).
 Proof modification of "matvscaOLD" is discouraged (69 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
+Proof modification of "mbfmbfmOLD" is discouraged (9 steps).
 Proof modification of "meetcomALT" is discouraged (83 steps).
 Proof modification of "merco1" is discouraged (57 steps).
 Proof modification of "merco1lem1" is discouraged (191 steps).
