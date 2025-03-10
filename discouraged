@@ -15359,6 +15359,7 @@ New usage of "cbvral" is discouraged (4 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
+New usage of "cbvraldvaOLD" is discouraged (0 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralfwOLD" is discouraged (0 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
@@ -15374,6 +15375,7 @@ New usage of "cbvrex" is discouraged (4 uses).
 New usage of "cbvrex2v" is discouraged (0 uses).
 New usage of "cbvrexcsf" is discouraged (1 uses).
 New usage of "cbvrexdva2OLD" is discouraged (0 uses).
+New usage of "cbvrexdvaOLD" is discouraged (0 uses).
 New usage of "cbvrexf" is discouraged (1 uses).
 New usage of "cbvrexsv" is discouraged (1 uses).
 New usage of "cbvrexsvwOLD" is discouraged (0 uses).
@@ -18847,6 +18849,7 @@ New usage of "rexcomOLD" is discouraged (0 uses).
 New usage of "rexdif1enOLD" is discouraged (0 uses).
 New usage of "rexeqOLD" is discouraged (0 uses).
 New usage of "rexeqbidvvOLD" is discouraged (0 uses).
+New usage of "rexeqfOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
 New usage of "reximiaOLD" is discouraged (0 uses).
 New usage of "rexlimddvcbv" is discouraged (0 uses).
@@ -20115,11 +20118,13 @@ Proof modification of "cbvmowOLD" is discouraged (62 steps).
 Proof modification of "cbvmptvOLD" is discouraged (13 steps).
 Proof modification of "cbvopab1vOLD" is discouraged (13 steps).
 Proof modification of "cbvopabvOLD" is discouraged (20 steps).
+Proof modification of "cbvraldvaOLD" is discouraged (16 steps).
 Proof modification of "cbvralfwOLD" is discouraged (139 steps).
 Proof modification of "cbvralsvwOLD" is discouraged (53 steps).
 Proof modification of "cbvreuvwOLD" is discouraged (13 steps).
 Proof modification of "cbvreuwOLD" is discouraged (145 steps).
 Proof modification of "cbvrexdva2OLD" is discouraged (109 steps).
+Proof modification of "cbvrexdvaOLD" is discouraged (16 steps).
 Proof modification of "cbvrexsvwOLD" is discouraged (53 steps).
 Proof modification of "cbvriotavwOLD" is discouraged (13 steps).
 Proof modification of "cbvrmowOLD" is discouraged (58 steps).
@@ -21268,6 +21273,7 @@ Proof modification of "rexcomOLD" is discouraged (67 steps).
 Proof modification of "rexdif1enOLD" is discouraged (120 steps).
 Proof modification of "rexeqOLD" is discouraged (11 steps).
 Proof modification of "rexeqbidvvOLD" is discouraged (47 steps).
+Proof modification of "rexeqfOLD" is discouraged (55 steps).
 Proof modification of "reximdvaiOLD" is discouraged (28 steps).
 Proof modification of "reximiaOLD" is discouraged (21 steps).
 Proof modification of "rexlimivOLD" is discouraged (23 steps).
