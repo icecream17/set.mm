@@ -17196,6 +17196,7 @@ New usage of "lcfls1N" is discouraged (0 uses).
 New usage of "lcfrlem12N" is discouraged (0 uses).
 New usage of "lcfrvalsnN" is discouraged (0 uses).
 New usage of "ldualsaddN" is discouraged (0 uses).
+New usage of "leadd2OLD" is discouraged (0 uses).
 New usage of "lecm" is discouraged (1 uses).
 New usage of "lecmi" is discouraged (2 uses).
 New usage of "lecmii" is discouraged (5 uses).
@@ -20249,6 +20250,7 @@ Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
+Proof modification of "leadd2OLD" is discouraged (76 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "lidl0ALT" is discouraged (48 steps).
 Proof modification of "lidl1ALT" is discouraged (47 steps).
