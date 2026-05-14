@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+11-Jun-26 elrabrd     [same]      Moved from TA's mathbox to main set.mm
 11-Jun-26 elrnmptdv   [same]      Second hypothesis's equality commuted
 11-Jun-26 rr-elrnmpt3d elrnmptdv
  6-Jun-26 csbopabgALT csbopabw
