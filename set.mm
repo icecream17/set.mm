@@ -723040,6 +723040,22 @@ $)
     ( cif wbr iftrue breq12d wn iffalse casesifp ) AABCGZADEGZFHBDFHCEFHANBODFA
     BCIADEIJAKNCOEFABCLADELJM $.
 
+  ${
+    inex1d.a $e |- ( ph -> A e. V ) $.
+    $( The intersection of a set and a class is a set.  Equivalent to
+       ~ ax-sep .  (Contributed by SN, 20-Oct-2026.) $)
+    inex1d $p |- ( ph -> ( A i^i B ) e. _V ) $=
+      ( wcel cin cvv inex1g syl ) ABDFBCGHFEBCDIJ $.
+  $}
+
+  ${
+    inex2d.b $e |- ( ph -> B e. V ) $.
+    $( The intersection of a class and a set is a set.  Equivalent to
+       ~ ax-sep .  (Contributed by SN, 20-Oct-2026.) $)
+    inex2d $p |- ( ph -> ( A i^i B ) e. _V ) $=
+      ( wcel cin cvv inex2g syl ) ACDFBCGHFECBDIJ $.
+  $}
+
   $( The proper subset of a set is also a set.  (Contributed by Steven Nguyen,
      17-Jul-2022.) $)
   pssexg $p |- ( ( A C. B /\ B e. C ) -> A e. _V ) $=
@@ -723096,6 +723112,18 @@ $)
       reseq2d expimpd impbid ) ADEBHZIZDBJZDEKZLZAURUOUNBJZUNEKZLAUSUTACBEFGMEB
       NOUOUPUSUQUTBDUNPDUNETQRAUPUQUOAUPLZESZUQUOAVBUPACEFUAUBVBUQLZDEDUCZHZIVA
       UOVCVEDEDUDUEVAVEUNDVAVDBEUPVDBIABDUFUGUKUHUIUJULUM $.
+  $}
+
+  ${
+    $d F x y $.  $d A x y $.  $d ph x y $.
+    f1d.f $e |- ( ph -> F : A --> B ) $.
+    f1d.e $e |- ( ( ph /\ ( x e. A /\ y e. A ) ) ->
+                 ( ( F ` x ) = ( F ` y ) -> x = y ) ) $.
+    $( Deduce that a function is one-to-one (is injective) from its properties.
+       (Contributed by SN, 20-Oct-2026.) $)
+    f1d $p |- ( ph -> F : A -1-1-> B ) $=
+      ( wf cv cfv wceq weq wi wral wf1 ralrimivva dff13 sylanbrc ) ADEFIBJFKCJF
+      KLBCMNZCDOBDODEFPGATBCDDHQBCDEFRS $.
   $}
 
   ${
@@ -723198,6 +723226,37 @@ $)
       ZCDSZWGVTWEWIBVLDAVSUFZBJUGZWEWITVTWKWDWHCDWBVLWCEUHUIUJUKAWIWGULVSAWHWGC
       FDIWCFUMWHWGTAWCFVLEUNUJUKQUOUPZURUQUSAJDVQVRVRUTADFIVAVBAVQDAJVQDAFEDHVC
       VTVLVQPZFVLERZVTVLFEDWAWLVDVTVSFDPZWMWNTWJAWOVSIQVLFEDDVEVFVGVJVHVIVK $.
+  $}
+
+  ${
+    elecbr.r $e |- ( ph -> R Er A ) $.
+    elecbr.b $e |- ( ph -> B e. ( A /. R ) ) $.
+    elecbr.c $e |- ( ph -> C e. B ) $.
+    elecbr.d $e |- ( ph -> D e. B ) $.
+    $( Members of the same equivalent class are equivalent by the relation.
+       (Contributed by SN, 20-Oct-2026.) $)
+    elecbr $p |- ( ph -> C R D ) $=
+      ( wbr cec wceq wer cqs wcel qsel syl3anc eqtr3d sseldd qsss elpwid mpbird
+      cpw erth ) ADEFKDFLZEFLZMACUFUGABFNZCBFOZPZDCPCUFMGHIBCDFBQRAUHUJECPCUGMG
+      HJBCEFBQRSADEFBGACBDACBAUIBUDCABFGUAHTUBITUEUC $.
+  $}
+
+  ${
+    $d ph a b c $.  $d A a b c $.  $d F a b c $.  $d R a b c $.
+    qsreprf1o.r $e |- ( ph -> R Er A ) $.
+    qsreprf1o.b $e |- ( ph -> F Fn ( A /. R ) ) $.
+    qsreprf1o.c $e |- ( ( ph /\ b e. ( A /. R ) ) -> ( F ` b ) e. b ) $.
+    $( A function that maps equivalence classes to a representative in that
+       equivalence class is a bijection.  (Contributed by SN, 21-Oct-2026.) $)
+    qsreprf1o $p |- ( ph -> F : ( A /. R ) -1-1-onto-> ran F ) $=
+      ( va vc cv cfv wceq weq wcel wa cec adantr simpr fveq2 cqs crn wf1 wfn wf
+      wf1o dffn3 sylib eceq1 wer wral ralrimiva id eleq12d rspccva qsel syl3anc
+      sylan adantrr adantrl eqeq12d imbitrrid f1d f1f1orn syl ) ABCUAZDUBZDUCVF
+      VGDUFAIJVFVGDADVFUDVFVGDUEGVFDUGUHIKZDLZJKZDLZMIJNAVHVFOZVJVFOZPPZVICQZVK
+      CQZMVIVKCUIVNVHVOVJVPAVLVHVOMZVMAVLPBCUJZVLVIVHOZVQAVRVLFRAVLSAEKZDLZVTOZ
+      EVFUKZVLVSAWBEVFHULZWBVSEVHVFEINZWAVIVTVHVTVHDTWEUMUNUOURBVHVICBUPUQUSAVM
+      VJVPMZVLAVMPVRVMVKVJOZWFAVRVMFRAVMSAWCVMWGWDWBWGEVJVFEJNZWAVKVTVJVTVJDTWH
+      UMUNUOURBVJVKCBUPUQUTVAVBVCVFVGDVDVE $.
   $}
 
   ${
@@ -728803,6 +728862,87 @@ $)
       CAUUMUPZPUUKQFEAEFUUDUUMABCEFGHMNOSTUCUDUEUGUHUUEWQAPUUKFUMUUMABCDEFGHIJK
       LMNOPRSTUAUBUCUDUEUFUGUHUIUJYTWQUYPQUULUUKFAQUULFUMUUMABCDEFGHIJKLMNOQRST
       UAUBUCUDUEUFUGUHUIUKYTWQAUUMUUFUUGUUHUUI $.
+  $}
+
+  ${
+    $d A p v $.  $d B v $.  $d F p $.  $d P p $.
+    $( The hypothesis for ` F ` exists so that we have
+       ` U. ( F " p ) e. _V ` . $)
+    prjspnreprval.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspnreprval.r $e |- R = ( p e. P |-> U. ( F " p ) ) $.
+    prjspnreprval.a $e |- ( ph -> A e. P ) $.
+    $( Value of the projective point representative function.  (Contributed by
+       SN, 20-Oct-2026.) $)
+    prjspnreprval $p |- ( ph -> ( R ` A ) = U. ( F " A ) ) $=
+      ( cv cima cuni cvv cfv cmpt imaeq2 unieqd cin co crn imaeq1i mptima eqtri
+      wceq wcel inex2g syl mptexd rnexd eqeltrid uniexd fvmptd3 ) AKCHKOZPZQHCP
+      ZQEFRMURCUIUSUTURCHUAUBNAUTRAUTBDCUCZBOZJSVBSISVBGUDZTZUEZRUTBDVCTZCPVEHV
+      FCLUFBDVCCUGUHAVDRABVAVCRACEUJVARUJNCDEUKULUMUNUOUPUQ $.
+  $}
+
+  ${
+    $d B b s v x y $.  $d F d p r s $.  $d K b i l s x y $.  $d I l v x y $.
+    $d J i l v x y $.  $d N b i $.  $d P p $.  $d W l x y $.
+    $d .x. b i l s v x y $.  $d ph d i r s x y $.
+    prjspnreprf1o.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    prjspnreprf1o.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspnreprf1o.r $e |- R = ( p e. P |-> U. ( F " p ) ) $.
+    prjspnreprf1o.p $e |- P = ( N PrjSpn K ) $.
+    prjspnreprf1o.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    prjspnreprf1o.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    prjspnreprf1o.i $e |- I = ( invr ` K ) $.
+    prjspnreprf1o.t $e |- .x. = ( .s ` W ) $.
+    prjspnreprf1o.k $e |- ( ph -> K e. DivRing ) $.
+    prjspnreprf1o.n $e |- ( ph -> N e. NN0 ) $.
+    ${
+      $d A d i r p s v x y $.  $d b d l $.
+      prjspnreprcl.a $e |- ( ph -> A e. P ) $.
+      $( The representative of a projective point is a member of the point
+         (note: projective points are equivalence classes).  (Contributed by
+         SN, 21-Oct-2026.) $)
+      prjspnreprcl $p |- ( ph -> ( R ` A ) e. A ) $=
+        ( vd vx vy vl vr vs cima cuni prjspnreprval wcel prjspnn0 cv wa co wceq
+        cfv cbs wrex copab cec wbr cdr adantr elprjspnss sselda prjspnequivnorm
+        eqid cn0 fvex vex elec sylibr csn wfn ovex wss fnbrfvb sylancr ad2antrr
+        fnmpti prjspner cqs cprjspn prjspnval2 eqtrid eleqtrd simplr prjspnnorm
+        wb simpr elecbr mpbid eqeq1d bitr3d rexbidva c0 biantrurd bicomd 19.41v
+        wne wex df-rex n0 anbi1i 3bitr4i eqcom 3bitr4g bitrd elima velsn unieqd
+        eqrdv unisn eqtrdi wer n0limd qsel syl3anc 3eltr4d eqeltrd ) ACFVCICUNZ
+        UOZCABCDEFGIJKORSUGUPAYICUQUHCACELMTUFUEUGURZAUHUSZCUQZUTZYKIVCZYKUIUSZ
+        DUQUJUSZDUQUTYOUKUSYPGVAVBUKLVDVCZVEUTUIUJVFZVGZYICYMYKYNYRVHYNYSUQYMUI
+        UJBDYRYQGHIJKLMNYKPUKYRVNZQRUAUBYQVNZUCUDALVIUQZYLUEVJAMVOUQZYLUFVJACDY
+        KACDELMNTUAUBUFUEUGVKZVLZVMYNYKYRYKIVPZUHVQVRVSYMYIYNVTZUOYNYMYHUUGYMUL
+        YHUUGYMUMUSZULUSZIVHZUMCVEZUUIYNVBZUUIYHUQUUIUUGUQYMUUKYNUUIVBZUMCVEZUU
+        LYMUUJUUMUMCYMUUHCUQZUTZUUHIVCZUUIVBZUUJUUMUUPIDWAUUHDUQUURUUJWPBDBUSZK
+        VCUUSVCJVCZUUSGVAIUUTUUSGWBRWGYMCDUUHACDWCYLUUDVJVLZDUUHUUIIWDWEUUPUUQY
+        NUUIUUPUUHYKYRVHUUQYNVBUUPDCUUHYKYRUUPUIUJDYRYQGLMNUKYTUAUBUUAUDAUUBYLU
+        UOUEWFZWHZACDYRWIZUQZYLUUOACEUVDUGAEMLWJVAUVDTAUIUJDYRYQGLMNUKYTUAUBUUA
+        UDUFUEWKWLWMZWFYMUUOWQAYLUUOWNWRUUPUIUJBDYRYQGHIJKLMNUUHYKPUKYTQRUAUBUU
+        AUCUDUVBAUUCYLUUOUFWFUVAYMYKDUQUUOUUEVJWOWSWTXAXBYMCXCXGZUUMUTZUUMUUNUU
+        LYMUUMUVHYMUVGUUMAUVGYLYJVJZXDXEUUOUUMUTUMXHUUOUMXHZUUMUTUUNUVHUUOUUMUM
+        XFUUMUMCXIUVGUVJUUMUMCXJXKXLUUIYNXMXNXOUMUUIICULVQXPULYNXQXNXSXRYNUUFXT
+        YAYMDYRYBZUVEYLCYSVBYMUVKUMCUVIUVCYCAUVEYLUVFVJAYLWQDCYKYRDYDYEYFYCYG
+        $.
+    $}
+
+    $d B a $.  $d K a $.  $d P i $.  $d R a $.  $d .x. a $.  $d ph a $.
+    $d a d i l r p s v x y $.
+    $( The function mapping projective points to their representative is a
+       bijection.  (Contributed by SN, 12-Oct-2026.) $)
+    prjspnreprf1o $p |- ( ph -> R : P -1-1-onto-> ran R ) $=
+      ( vx vy vl va crn wf1o cv wcel wa co wceq cbs cfv wrex copab cqs prjspner
+      eqid wfn cima cuni cmpt cvv c0g csn cdif difexi eqeltri mptex imaex uniex
+      fvex fnmpti cprjspn prjspnval2 eqtrid fneq2d mpbii eleq2d biimpar cdr cn0
+      adantr simpr prjspnreprcl syldan qsreprf1o f1oeq2d mpbird ) ADEUJZEUKCUFU
+      LZCUMUGULZCUMUNWPUHULWQFUOUPUHKUQURZUSUNUFUGUTZVAZWOEUKACWSEUIAUFUGCWSWRF
+      KLMUHWSVCZTUAWRVCZUCUDVBAEDVDEWTVDNDHNULZVEZVFEXDHXCHBCBULZJURXEURIURXEFU
+      OZVGVHQBCXFCMUQURZMVIURVJZVKVHUAXGXHMUQVQVLVMVNVMVOVPRVRADWTEADLKVSUOWTSA
+      UFUGCWSWRFKLMUHXATUAXBUCUEUDVTWAZWBWCAUIULZWTUMZXJDUMZXJEURXJUMAXLXKADWTX
+      JXIWDWEAXLUNBXJCDEFGHIJKLMNOPQRSTUAUBUCAKWFUMXLUDWHALWGUMXLUEWHAXLWIWJWKW
+      LADWTWOEXIWMWN $.
   $}
 
   ${
