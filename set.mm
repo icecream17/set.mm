@@ -728790,6 +728790,33 @@ $)
   $}
 
   ${
+    $d B b v $.  $d I v $.  $d J i v $.  $d K b i $.  $d N b i $.
+    $d V b i v $.  $d .x. v $.
+    prjspnnormcoord1.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    prjspnnormcoord1.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspnnormcoord1.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    prjspnnormcoord1.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    prjspnnormcoord1.i $e |- I = ( invr ` K ) $.
+    prjspnnormcoord1.t $e |- .x. = ( .s ` W ) $.
+    prjspnnormcoord1.1 $e |- .1. = ( 1r ` K ) $.
+    prjspnnormcoord1.k $e |- ( ph -> K e. DivRing ) $.
+    prjspnnormcoord1.n $e |- ( ph -> N e. NN0 ) $.
+    prjspnnormcoord1.v $e |- ( ph -> V e. B ) $.
+    $( The first nonzero coordinate of a normalized vector is one.
+       (Contributed by SN, 21-Oct-2026.) $)
+    prjspnnormcoord1 $p |- ( ph -> ( ( F ` V ) ` ( J ` V ) ) = .1. ) $=
+      ( cfv cmulr prjspnnormval fveq1d cbs cc0 cfz cvv eqid ovexd c0g drngringd
+      co frlmnzcoordcl2 frlmnzcoordn0 drnginvrcld csn cdif difss eqsstri sselid
+      frlmnzcoordcl frlmvscaval drnginvrld 3eqtrd ) ALIUEZLGUEZUEVJVJLUEZHUEZLD
+      UQZUEVMVLJUFUEZUQEAVJVKVNABCDGHILPUDUGUHAVMMUIUEZJDVOUJKUKUQVJJUIUEZULLMQ
+      VPUMVQUMZAUJKUKUNAVQJHVLJUOUEZVRVSUMZSUBACVQFIJKLMNOQRAJUBUPZUCUDVRURZACF
+      IJKLMNOQRWAUCUDUSZUTACVPLCVPMUOUEVAZVBVPRVPWDVCVDUDVEACFIJKLMNOQRWAUCUDVF
+      TVOUMZVGAVQJVOEHVLVSVRVTWEUASUBWBWCVHVI $.
+  $}
+
+  ${
     $d B b v x y $.  $d I l v x y $.  $d J i l v x y $.  $d K b i x y $.
     $d N b i $.  $d S l $.  $d W l x y $.  $d X b i l v x y $.
     $d .x. l v x y $.
@@ -728883,7 +728910,7 @@ $)
 
   ${
     $d B b s v x y $.  $d F d p r s $.  $d K b i l s x y $.  $d I l v x y $.
-    $d J i l v x y $.  $d N b i $.  $d P p $.  $d W l x y $.
+    $d J i l v x y $.  $d N b i $.  $d P p $.  $d R d $.  $d W l x y $.
     $d .x. b i l s v x y $.  $d ph d i r s x y $.
     prjspnreprf1o.j $e |- J = ( b e. B |->
       inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
@@ -728900,32 +728927,41 @@ $)
     ${
       $d A d i r p s v x y $.  $d b d l $.
       prjspnreprcl.a $e |- ( ph -> A e. P ) $.
+      $( The representative of a projective point is the normalization of any
+         vector in the point.  (Contributed by SN, 21-Oct-2026.) $)
+      prjspnreprnorm $p |- ( ( ph /\ d e. A ) -> ( R ` A ) = ( F ` d ) ) $=
+        ( vr vs vx vy vl cv wcel wa cfv cima cuni wceq prjspnreprval adantr csn
+        wbr wrex co cbs copab wer eqid prjspner ad2antrr cqs cprjspn prjspnval2
+        eqtrid eleqtrd simpr simplr elecbr cdr cn0 elprjspnss sselda prjspnnorm
+        wss mpbid eqeq1d wfn wb ovex fnmpti fnbrfvb sylancr bitr3d rexbidva wne
+        c0 prjspnn0 biantrurd bicomd wex 19.41v df-rex n0 3bitr4i eqcom 3bitr4g
+        anbi1i vex elima velsn eqrdv unieqd fvex unisn eqtrdi eqtrd ) AQUNZCUOZ
+        UPZCFUQZICURZUSZXSIUQZAYBYDUTXTABCDEFGIJKOSTUHVAVBYAYDYEVCZUSYEYAYCYFYA
+        UIYCYFYAUJUNZUIUNZIVDZUJCVEZYHYEUTZYHYCUOYHYFUOYAYEYHUTZUJCVEZYJYKYAYLY
+        IUJCYAYGCUOZUPZYGIUQZYHUTZYLYIYOYPYEYHYOYGXSUKUNZDUOULUNZDUOUPYRUMUNYSG
+        VFUTUMLVGUQZVEUPUKULVHZVDYPYEUTYODCYGXSUUAADUUAVIXTYNAUKULDUUAYTGLMNUMU
+        UAVJZUBUCYTVJZUEUFVKVLACDUUAVMZUOXTYNACEUUDUHAEMLVNVFUUDUAAUKULDUUAYTGL
+        MNUMUUBUBUCUUCUEUGUFVOVPVQVLYAYNVRAXTYNVSVTYOUKULBDUUAYTGHIJKLMNYGXSPUM
+        UUBRSUBUCUUCUDUEALWAUOXTYNUFVLAMWBUOXTYNUGVLYACDYGACDWFXTACDELMNUAUBUCU
+        GUFUHWCZVBWDZYAXSDUOYNACDXSUUEWDVBWEWGWHYOIDWIYGDUOYQYIWJBDBUNZKUQUUGUQ
+        JUQZUUGGVFIUUHUUGGWKSWLUUFDYGYHIWMWNWOWPYACWRWQZYLUPZYLYMYKYAYLUUJYAUUI
+        YLAUUIXTACELMUAUGUFUHWSVBWTXAYNYLUPUJXBYNUJXBZYLUPYMUUJYNYLUJXCYLUJCXDU
+        UIUUKYLUJCXEXIXFYHYEXGXHWOUJYHICUIXJXKUIYEXLXHXMXNYEXSIXOXPXQXR $.
+
       $( The representative of a projective point is a member of the point
          (note: projective points are equivalence classes).  (Contributed by
          SN, 21-Oct-2026.) $)
       prjspnreprcl $p |- ( ph -> ( R ` A ) e. A ) $=
-        ( vd vx vy vl vr vs cima cuni prjspnreprval wcel prjspnn0 cv wa co wceq
-        cfv cbs wrex copab cec wbr cdr adantr elprjspnss sselda prjspnequivnorm
-        eqid cn0 fvex vex elec sylibr csn wfn ovex wss fnbrfvb sylancr ad2antrr
-        fnmpti prjspner cqs cprjspn prjspnval2 eqtrid eleqtrd simplr prjspnnorm
-        wb simpr elecbr mpbid eqeq1d bitr3d rexbidva c0 biantrurd bicomd 19.41v
-        wne wex df-rex n0 anbi1i 3bitr4i eqcom 3bitr4g bitrd elima velsn unieqd
-        eqrdv unisn eqtrdi wer n0limd qsel syl3anc 3eltr4d eqeltrd ) ACFVCICUNZ
-        UOZCABCDEFGIJKORSUGUPAYICUQUHCACELMTUFUEUGURZAUHUSZCUQZUTZYKIVCZYKUIUSZ
-        DUQUJUSZDUQUTYOUKUSYPGVAVBUKLVDVCZVEUTUIUJVFZVGZYICYMYKYNYRVHYNYSUQYMUI
-        UJBDYRYQGHIJKLMNYKPUKYRVNZQRUAUBYQVNZUCUDALVIUQZYLUEVJAMVOUQZYLUFVJACDY
-        KACDELMNTUAUBUFUEUGVKZVLZVMYNYKYRYKIVPZUHVQVRVSYMYIYNVTZUOYNYMYHUUGYMUL
-        YHUUGYMUMUSZULUSZIVHZUMCVEZUUIYNVBZUUIYHUQUUIUUGUQYMUUKYNUUIVBZUMCVEZUU
-        LYMUUJUUMUMCYMUUHCUQZUTZUUHIVCZUUIVBZUUJUUMUUPIDWAUUHDUQUURUUJWPBDBUSZK
-        VCUUSVCJVCZUUSGVAIUUTUUSGWBRWGYMCDUUHACDWCYLUUDVJVLZDUUHUUIIWDWEUUPUUQY
-        NUUIUUPUUHYKYRVHUUQYNVBUUPDCUUHYKYRUUPUIUJDYRYQGLMNUKYTUAUBUUAUDAUUBYLU
-        UOUEWFZWHZACDYRWIZUQZYLUUOACEUVDUGAEMLWJVAUVDTAUIUJDYRYQGLMNUKYTUAUBUUA
-        UDUFUEWKWLWMZWFYMUUOWQAYLUUOWNWRUUPUIUJBDYRYQGHIJKLMNUUHYKPUKYTQRUAUBUU
-        AUCUDUVBAUUCYLUUOUFWFUVAYMYKDUQUUOUUEVJWOWSWTXAXBYMCXCXGZUUMUTZUUMUUNUU
-        LYMUUMUVHYMUVGUUMAUVGYLYJVJZXDXEUUOUUMUTUMXHUUOUMXHZUUMUTUUNUVHUUOUUMUM
-        XFUUMUMCXIUVGUVJUUMUMCXJXKXLUUIYNXMXNXOUMUUIICULVQXPULYNXQXNXSXRYNUUFXT
-        YAYMDYRYBZUVEYLCYSVBYMUVKUMCUVIUVCYCAUVEYLUVFVJAYLWQDCYKYRDYDYEYFYCYG
-        $.
+        ( vd vx vy vl cfv wcel prjspnn0 cv wa co wceq cbs wrex cec wbr eqid cdr
+        copab adantr cn0 elprjspnss sselda prjspnequivnorm fvex vex elec sylibr
+        prjspnreprnorm wer cqs prjspner cprjspn prjspnval2 eqtrid eleqtrd simpr
+        qsel syl3anc 3eltr4d n0limd ) ACFULZCUMUHCACELMTUFUEUGUNAUHUOZCUMZUPZWI
+        IULZWIUIUOZDUMUJUOZDUMUPWMUKUOWNGUQURUKLUSULZUTUPUIUJVEZVAZWHCWKWIWLWPV
+        BWLWQUMWKUIUJBDWPWOGHIJKLMNWIPUKWPVCZQRUAUBWOVCZUCUDALVDUMWJUEVFAMVGUMW
+        JUFVFACDWIACDELMNTUAUBUFUEUGVHVIVJWLWIWPWIIVKUHVLVMVNABCDEFGHIJKLMNOPUH
+        QRSTUAUBUCUDUEUFUGVOWKDWPVPZCDWPVQZUMZWJCWQURAWTWJAUIUJDWPWOGLMNUKWRUAU
+        BWSUDUEVRVFAXBWJACEXAUGAEMLVSUQXATAUIUJDWPWOGLMNUKWRUAUBWSUDUFUEVTWAWBV
+        FAWJWCDCWIWPDWDWEWFWG $.
     $}
 
     $d B a $.  $d K a $.  $d P i $.  $d R a $.  $d .x. a $.  $d ph a $.
@@ -728943,6 +728979,81 @@ $)
       UFUGCWSWRFKLMUHXATUAXBUCUEUDVTWAZWBWCAUIULZWTUMZXJDUMZXJEURXJUMAXLXKADWTX
       JXIWDWEAXLUNBXJCDEFGHIJKLMNOPQRSTUAUBUCAKWFUMXLUDWHALWGUMXLUEWHAXLWIWJWKW
       LADWTWOEXIWMWN $.
+  $}
+
+  ${
+    $d B b v $.  $d F p $.  $d K b i $.  $d I v $.  $d J i v $.  $d N b i $.
+    $d P i p z $.  $d R b i z $.  $d Z i $.  $d .x. b i v $.  $d .0. z $.
+    $d ph i $.  $d a b i p v z $.
+    prjspndecomp1lem1.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    prjspndecomp1lem1.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspndecomp1lem1.r $e |- R = ( p e. P |-> U. ( F " p ) ) $.
+    prjspndecomp1lem1.z $e |- Z = { z e. P | ( ( R ` z ) ` 0 ) = .0. } $.
+    prjspndecomp1lem1.p $e |- P = ( N PrjSpn K ) $.
+    prjspndecomp1lem1.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    prjspndecomp1lem1.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    prjspndecomp1lem1.i $e |- I = ( invr ` K ) $.
+    prjspndecomp1lem1.t $e |- .x. = ( .s ` W ) $.
+    prjspndecomp1lem1.0 $e |- .0. = ( 0g ` K ) $.
+    prjspndecomp1lem1.k $e |- ( ph -> K e. DivRing ) $.
+    prjspndecomp1lem1.n $e |- ( ph -> N e. NN0 ) $.
+    $( Lemma for ~ prjspndecomp1 .  If the representative's first coordinate is
+       not zero, then the index of its first nonzero coordinate is zero.
+       (Contributed by SN, 12-Oct-2026.) $)
+    prjspndecomp1lem1 $p |-
+      ( ( ph /\ a e. ( P \ Z ) ) -> ( J ` ( R ` a ) ) = 0 ) $=
+      ( cv cdif wcel wa cfv cc0 wceq cle wbr c0g wne co crab fveq2 neeq1d 0elfz
+      cfz cn0 syl adantr eldif simplr eqeq2i bilanri weq fveq1d eqeq1d sylanbrc
+      wn elrab2 necon3bd impr sylan2b elrabd cdr eldifi elprjspnss prjspnreprcl
+      ex adantl sseldd frlmnzcoordinf mpdan crg drngringd frlmnzcoordcl elfzle1
+      cr fzssre sselid 0red letri3d mpbir2and ) ARULZEPUMUNZUOZXEFUPZKUPZUQURXI
+      UQUSUTZUQXIUSUTZXGUQHULZXHUPZLVAUPZVBZHUQMVHVCZVDUNXJXGXOUQXHUPZXNVBZHUQX
+      PXLUQURXMXQXNXLUQXHVEVFAUQXPUNZXFAMVIUNZXSUKMVGVJVKXFAXEEUNZXEPUNZVTZUOXR
+      XEEPVLAYAYCXRAYAUOZYBXQXNYDXQXNURZYBYDYEUOYAXQOURZYBAYAYEVMYFYEYDOXNXQUIV
+      NVOUQBULZFUPZUPZOURYFBXEEPBRVPZYIXQOYJUQYHXHYGXEFVEVQVRUCWAVSWJWBWCWDWEXG
+      DHUQKLMXHSTXGXEDXHXGXEDELMNUDUEUFAXTXFUKVKZALWFUNXFUJVKZXFYAAXEEPWGWKZWHX
+      GCXEDEFGHIJKLMNQSTUAUBUDUEUFUGUHYLYKYMWIWLZWMWNXGXIXPUNXKXGDHKLMXHNSTUEUF
+      ALWOUNXFALUJWPVKYKYNWQZXIUQMWRVJXGXIUQXGXPWSXIUQMWTYOXAXGXBXCXD $.
+  $}
+
+  ${
+    $d B b v $.  $d F d p $.  $d K b i $.  $d I b i v $.  $d J b i v $.
+    $d N b i $.  $d P d i p z $.  $d R b d i z $.  $d Z d i $.  $d .x. b i v $.
+    $d .0. z $.  $d .1. d $.  $d ph d i $.  $d a b d i p v z $.
+    prjspndecomp1lem.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    prjspndecomp1lem.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspndecomp1lem.r $e |- R = ( p e. P |-> U. ( F " p ) ) $.
+    prjspndecomp1lem.z $e |- Z = { z e. P | ( ( R ` z ) ` 0 ) = .0. } $.
+    prjspndecomp1lem.p $e |- P = ( N PrjSpn K ) $.
+    prjspndecomp1lem.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    prjspndecomp1lem.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    prjspndecomp1lem.i $e |- I = ( invr ` K ) $.
+    prjspndecomp1lem.t $e |- .x. = ( .s ` W ) $.
+    prjspndecomp1lem.0 $e |- .0. = ( 0g ` K ) $.
+    prjspndecomp1lem.1 $e |- .1. = ( 1r ` K ) $.
+    prjspndecomp1lem.k $e |- ( ph -> K e. DivRing ) $.
+    prjspndecomp1lem.n $e |- ( ph -> N e. NN0 ) $.
+    $( Lemma for ~ prjspndecomp1 .  If the representative's first coordinate is
+       not zero, it is one.  (Contributed by SN, 12-Oct-2026.) $)
+    prjspndecomp1lem2 $p |-
+      ( ( ph /\ a e. ( P \ Z ) ) -> ( ( R ` a ) ` 0 ) = .1. ) $=
+      ( vd cv cdif wcel wa cc0 cfv wceq cn0 adantr eldifi adantl prjspnreprnorm
+      cdr prjspnn0 wel elprjspnss sselda prjspnnormval fveq2d prjspndecomp1lem1
+      eqtrd eqid drngringd frlmnzcoordcl2 frlmnzcoordn0 drnginvrcld drnginvrn0d
+      co cbs c0g a1i neeqtrrd frlmnzcoordsca 3eqtr3d fveq12d prjspnnormcoord1
+      n0limd ) ASUOZEQUPUQZURZUSWLFUTZUTZHVAUNWLWNWLEMNUEANVBUQZWMUMVCZAMVGUQZW
+      MULVCZWMWLEUQAWLEQVDVEZVHWNUNSVIZURZWPUNUOZLUTZXDJUTZUTHXCUSXEWOXFWNCWLDE
+      FGIJKLMNORTUNUAUBUCUEUFUGUHUIWTWRXAVFZXCWOLUTZXEXDUTZKUTZXDGWBZLUTUSXEXCW
+      OXKLXCWOXFXKXGXCCDGJKLXDUBWNWLDXDWNWLDEMNOUEUFUGWRWTXAVJVKZVLVOVMWNXHUSVA
+      XBABCDEFGIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJULUMVNVCXCDXJMWCUTZGILMNXDOPTUAU
+      FUGUIUJXMVPZWNWSXBWTVCZWNWQXBWRVCZXLXCXMMKXIMWDUTZXNXQVPZUHXOXCDXMILMNXDO
+      TUAUFUGXCMXOVQZXPXLXNVRZXCDILMNXDOTUAUFUGXSXPXLVSZVTXCXJXQPXCXMMKXIXQXNXR
+      UHXOXTYAWAPXQVAXCUJWEWFWGWHWIXCCDGHIJKLMNXDOTUAUBUFUGUHUIUKXOXPXLWJVOWK
+      $.
   $}
 
   ${
