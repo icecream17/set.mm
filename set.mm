@@ -494107,6 +494107,9 @@ htmldef "PrjCrv" as
     " <IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>rojCrv ";
   althtmldef "PrjCrv" as " &#8473;rojCrv ";
   latexdef "PrjCrv" as "\mathbin{\mathbb{P}\mathrm{rojCrv}}";
+htmldef "testDef" as "testDef";
+  althtmldef "testDef" as "testDef";
+  latexdef "testDef" as "testDef";
 /* End of Steven Nguyen's mathbox */
 
 /* Mathbox of Stefan O'Rear */
@@ -729555,6 +729558,16 @@ $)
      (New usage is discouraged.) $)
   sn-wcdeq $p wff ( x = y -> ph ) $=
     ( weq wi ) BCDAE $.
+
+  $c testDef $.
+
+  ctestdef $a wff w testDef t $.
+
+  ${
+    $d x w $.  $d x t $.
+    $( Test.  (Contributed by SN, 21-Oct-2026.) $)
+    df-testdef $a |- ( w testDef t <-> A. x ( x = w -> x e. t ) ) $.
+  $}
 
   $( 45 squared is 2025.  (Contributed by SN, 30-Mar-2025.) $)
   sq45 $p |- ( ; 4 5 ^ 2 ) = ; ; ; 2 0 2 5 $=
