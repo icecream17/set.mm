@@ -27,7 +27,7 @@ jobs:
           print('ORIGINAL_COMPRESSED_CAPITALS',sum(c.isupper() for c in proof.split(')',1)[-1]))
           print('ORIGINAL_PROOF_CHARACTERS',len(proof))
           PY
-          ./metamath 'read set.mm' 'prove psdmul' 'minimize_with * /brief /allow_new_axioms * /no_new_axioms_from ax-*' 'save new_proof /compressed' 'exit' 'verify proof psdmul' 'write source set.mm' 'exit' | tee /tmp/psdmul-min.log
+          $HOME/bin/metamath 'read set.mm' 'prove psdmul' 'minimize_with * /brief /allow_new_axioms * /no_new_axioms_from ax-*' 'save new_proof /compressed' 'exit' 'verify proof psdmul' 'write source set.mm' 'exit' | tee /tmp/psdmul-min.log
           python3 - <<'PY'
           from pathlib import Path
           import re
