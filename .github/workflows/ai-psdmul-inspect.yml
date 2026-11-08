@@ -8,7 +8,7 @@ permissions:
 jobs:
   minimize:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
       - name: Download and build Metamath
@@ -28,7 +28,7 @@ jobs:
           print('ORIGINAL_PROOF_CHARACTERS',len(proof))
           PY
           set -o pipefail
-          $HOME/bin/metamath 'read set.mm' 'prove psdmul' 'minimize_with * /allow_new_axioms * /no_new_axioms_from ax-*' 'save new_proof /compressed' 'exit' 'verify proof psdmul' 'write source set.mm' 'exit' | tee /tmp/psdmul-min.log
+          $HOME/bin/metamath 'read set.mm' 'prove psdmul' 'minimize_with * /allow_new_axioms * /no_new_axioms_from ax-* /time 90' 'save new_proof /compressed' 'exit' 'verify proof psdmul' 'write source set.mm' 'exit' | tee /tmp/psdmul-min.log
           python3 - <<'PY'
           from pathlib import Path
           import re
