@@ -1,0 +1,19 @@
+name: eu6w one-substitution experiment
+on:
+  pull_request:
+    branches: [develop]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-eu6w1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Metamath verifier
+        run: |
+          scripts/download-metamath
+          scripts/build-metamath
+      - name: Construct and verify one-hypothesis eu6w proof
+        run: python3 scripts/ai-eu6w1.py "$HOME/bin/metamath"
