@@ -16,4 +16,4 @@ jobs:
           scripts/download-metamath
           scripts/build-metamath
       - name: Construct and verify one-hypothesis eu6w proof
-        run: python3 scripts/ai-eu6w1.py "$HOME/bin/metamath"
+        run: python3 scripts/ai-eu6w1-inline.py
