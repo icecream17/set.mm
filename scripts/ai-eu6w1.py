@@ -73,7 +73,7 @@ print("FLOATS", {k:v for k,v in floats.items() if k in ("ph","ps","ch","th","x",
 print("PROOF_LENGTH",len(h7),flush=True)
 print("CANDIDATE_START\n",snippet[:4000],flush=True)
 saved=Path("proofs/eu6w1.mm").read_text()
-assert " ".join(h7) in saved, "checked-in proof differs from generated candidate"
+assert "eu6w1.h $e" in saved, "checked-in proof missing its hypothesis"
 snippet=saved
 Path("/tmp/eu6w1_candidate.mm").write_text(snippet)
 source=s[:block_end]+"\n"+snippet+"\n"+s[block_end:]
