@@ -72,13 +72,18 @@ snippet = """  $""" + "{" + """
 print("FLOATS", {k:v for k,v in floats.items() if k in ("ph","ps","ch","th","x","y","z")},flush=True)
 print("PROOF_LENGTH",len(h7),flush=True)
 print("CANDIDATE_START\n",snippet[:4000],flush=True)
+saved=Path("proofs/eu6w1.mm").read_text()
+assert " ".join(h7) in saved, "checked-in proof differs from generated candidate"
+snippet=saved
 Path("/tmp/eu6w1_candidate.mm").write_text(snippet)
 source=s[:block_end]+"\n"+snippet+"\n"+s[block_end:]
 Path("eu6w1_database.mm").write_text(source)
 exe=sys.argv[1] if len(sys.argv)>1 else "/home/runner/bin/metamath"
-cmd=[exe,"read eu6w1_database.mm","verify proof eu6w1","show statement eu6w1 /full","exit"]
+cmd=[exe,"read eu6w1_database.mm","verify proof eu6w1","show trace_back eu6w1 /axioms","exit"]
 res=subprocess.run(cmd,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=150)
 print("VERIFIER_OUTPUT\n"+res.stdout[-13000:],flush=True)
-bad=("?" in res.stdout or "error" in res.stdout.lower() or "not verified" in res.stdout.lower())
+bad=("?" in res.stdout or "error(s) were found" in res.stdout.lower() or "not verified" in res.stdout.lower() or "ax-10" in res.stdout or "ax-12" in res.stdout)
+assert "MM> verify proof eu6w1" in res.stdout
+assert "MM> show trace_back eu6w1 /axioms" in res.stdout
 if bad: sys.exit(1)
 print("PASS: verifier reported no errors for eu6w1")
