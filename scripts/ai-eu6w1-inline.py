@@ -137,6 +137,9 @@ snippet="""  $"""+"{"+"""
   $}
 """
 print("INDEPENDENT_PROOF_SNIPPET_START\n"+snippet+"\nINDEPENDENT_PROOF_SNIPPET_END",flush=True)
+saved=Path("proofs/eu6w1.mm").read_text()
+assert re.sub(r"\s+","",saved)==re.sub(r"\s+","",snippet), "Checked-in proof differs from independent derivation"
+snippet=saved
 Path("eu6w1_inline_database.mm").write_text(s[:s.rfind("$"+"{",0,start)]+snippet+"\n"+s[s.rfind("$"+"{",0,start):])
 exe="/home/runner/bin/metamath"
 r=subprocess.run([exe,"read eu6w1_inline_database.mm","verify proof eu6w1","show trace_back eu6w1 /axioms","exit"],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=180)
