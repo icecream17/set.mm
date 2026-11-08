@@ -1,0 +1,30 @@
+name: psdmul temporary proof investigation
+on:
+  pull_request:
+    branches: [develop]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract psdmul and nearby helper statements
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          s=Path('set.mm').read_text()
+          match=re.search(r'\bpsdmul\s+\$p\s',s)
+          if not match:
+              print('NOT FOUND')
+              exit(1)
+          i=match.start()
+          j=s.find('$.',match.end())+2
+          print('== PSBDMUL LOCATION ==',i,j,'bytes',j-i)
+          print('== SECTION BEFORE THEOREM ==')
+          print(s[max(0,i-25000):i][-25000:])
+          print('== PSBDMUL THEOREM ==')
+          print(s[i:j][:45000])
+          PY
