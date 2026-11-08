@@ -74,9 +74,9 @@ print("PROOF_LENGTH",len(h7),flush=True)
 print("CANDIDATE_START\n",snippet[:4000],flush=True)
 Path("/tmp/eu6w1_candidate.mm").write_text(snippet)
 source=s[:block_end]+"\n"+snippet+"\n"+s[block_end:]
-Path("/tmp/eu6w1_database.mm").write_text(source)
+Path("eu6w1_database.mm").write_text(source)
 exe=sys.argv[1] if len(sys.argv)>1 else "/home/runner/bin/metamath"
-cmd=[exe,"read /tmp/eu6w1_database.mm","verify proof eu6w1","show statement eu6w1 /full","exit"]
+cmd=[exe,"read eu6w1_database.mm","verify proof eu6w1","show statement eu6w1 /full","exit"]
 res=subprocess.run(cmd,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=150)
 print("VERIFIER_OUTPUT\n"+res.stdout[-13000:],flush=True)
 bad=("?" in res.stdout or "error" in res.stdout.lower() or "not verified" in res.stdout.lower())
