@@ -6,25 +6,39 @@ on:
 permissions:
   contents: read
 jobs:
-  inspect:
+  minimize:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Extract psdmul and nearby helper statements
+      - name: Download and build Metamath
+        run: |
+          scripts/download-metamath
+          scripts/build-metamath
+      - name: Optimize psdmul and verify
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
           s=Path('set.mm').read_text()
-          match=re.search(r'\bpsdmul\s+\$p\s',s)
-          if not match:
-              print('NOT FOUND')
-              exit(1)
-          i=match.start()
-          j=s.find('$.',match.end())+2
-          print('== PSBDMUL LOCATION ==',i,j,'bytes',j-i)
-          print('== SECTION BEFORE THEOREM ==')
-          print(s[max(0,i-25000):i][-25000:])
-          print('== PSBDMUL THEOREM ==')
-          print(s[i:j][:45000])
+          m=re.search(r'\bpsdmul\s+\$p\s',s)
+          p=s[m.end():s.index('$.',m.end())]
+          proof=p.split('$=',1)[1]
+          print('ORIGINAL_COMPRESSED_CAPITALS',sum(c.isupper() for c in proof.split(')',1)[-1]))
+          print('ORIGINAL_PROOF_CHARACTERS',len(proof))
           PY
+          ./metamath 'read set.mm' 'prove psdmul' 'minimize_with * /brief /allow_new_axioms * /no_new_axioms_from ax-*' 'save new_proof /compressed' 'exit' 'verify proof psdmul' 'write source set.mm' 'exit' | tee /tmp/psdmul-min.log
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          s=Path('set.mm').read_text()
+          m=re.search(r'\bpsdmul\s+\$p\s',s)
+          p=s[m.end():s.index('$.',m.end())]
+          proof=p.split('$=',1)[1]
+          print('FINAL_COMPRESSED_CAPITALS',sum(c.isupper() for c in proof.split(')',1)[-1]))
+          print('FINAL_PROOF_CHARACTERS',len(proof))
+          print('RESULTING_THEOREM',s[m.start():s.index('$.',m.end())+2])
+          PY
+          if grep -E 'Error|proof is incomplete|does not match|not verified' /tmp/psdmul-min.log; then
+            echo 'REVIEW METAMATH WARNINGS BEFORE USE'
+          fi
